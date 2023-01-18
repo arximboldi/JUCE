@@ -86,7 +86,7 @@ void ThreadWithProgressWindow::timerCallback()
 {
     bool threadStillRunning = isThreadRunning();
 
-    if (! (threadStillRunning && alertWindow->isCurrentlyModal (false)))
+    if (! (threadStillRunning))
     {
         stopTimer();
         stopThread (timeOutMsWhenCancelling);
